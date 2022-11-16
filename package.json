@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MacauleyStephenson/MobileMenu/issues"
   },
-  "homepage": "https://github.com/MacauleyStephenson/MobileMenu#readme"
+  "homepage": "https://github.com/MacauleyStephenson/MobileMenu#readme",
+  "devDependencies": {
+    "mini-css-extract-plugin": "^2.6.1",
+    "webpack-cli": "^4.10.0"
+  }
 }
