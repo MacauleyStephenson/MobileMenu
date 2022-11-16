@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html theme="light" lang="en">
+  <head>
+    <title>Dynamic UI</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/images/logos/thatblindgeye-favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-prefixed.css">
+  </head>
+  <body>
+    <header>
+      <div id="accessibility">
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <button type="button" role="switch" aria-checked="false" aria-label="light theme" class="theme-toggle">
+        </button>
+      </div>
+      <nav id="upper-nav">
+        <ul class="upper-links primary-links">
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#" class="link">Link 1</a></li>
+          <li><a href="#" class="link">Link 2</a></li>
+          <li><a href="#" class="link">Link 3</a></li>
+          <li><a href="#" class="link">Link 4</a></li>
+          <li class="dropdown-container">
+            <span role="button" id="dropdown-1" class="dropdown-button" tabindex="0" aria-expanded="false">Dropdown
+              <span class="material-icons" aria-hidden="true">expand_more</span>
+            </span>
+            <ul class="dropdown-links" aria-labelledby="dropdown-1">
+              <li><a href="#" class="link">Sub-Link A Sub-Link A</a></li>
+              <li><a href="#" class="link">Sub-Link B</a></li>
+              <li><a href="#" class="link">Sub-Link C</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="link">Link 5</a></li>
+          <li><a href="#" class="link">Link 6 Link 6</a></li>
+          <li><a href="#" class="link">Link 7</a></li>
+          <li class="dropdown-container">
+            <span role="button" id="dropdown-2" class="dropdown-button" tabindex="0" aria-expanded="false">Other Dropdown
+              <span class="material-icons" aria-hidden="true">expand_more</span>
+            </span>
+            <ul class="dropdown-links" aria-labelledby="dropdown-2">
+              <li><a href="#" class="link">Sub-Link D  Sub-Link D</a></li>
+              <li><a href="#" class="link">Sub-Link E</a></li>
+              <li><a href="#" class="link">Sub-Link F</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="link">Link 8</a></li>
+          <li class="more-container">
+            <span role="button" class="dropdown-button more-links-button" tabindex="0" aria-expanded="false">More
+              <span class="material-icons" aria-hidden="true">expand_more</span>
+            </span>
+            <ul class="dropdown-links more-links" tabindex="-1">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article class="image-slider-container" aria-label="image slider">
+        <h1>Cat Image Slider</h1>
+        <p>Click the image to pause the automated cycle!</p>
+        <div class="image-container">
+          <img class="current-image" src="" alt="" tabindex="0">
+          <div id="image-credits" tabindex="0" aria-labelledby="image-credits credit-link">
+            Photo by:
+            <a id="credit-link" href=""></a>
+          </div>
+          <div role="button" class="previous-arrow slider-arrow" tabindex="0" aria-label="previous image">
+            <span class="material-icons" aria-hidden="true">
+              navigate_before
+            </span>
+          </div>
+          <div role="button" class="next-arrow slider-arrow" tabindex="0" aria-label="next image">
+            <span class="material-icons" aria-hidden="true">
+              navigate_next
+            </span>
+          </div>
+        </div>
+      </article>
+      <div class="slider-dots">
+      </div>
+    </main>
+
+    <footer>
+      <nav id="lower-nav">
+        <a href="https://github.com/MacauleyStephenson" target="_blank">
+          <img class="github-logo" src="assets/images/logos/GitHub-Mark-32px.png" alt="Macauley Stephenson's profile">
+          (opens in a new tab)
+        </a>
+      </nav>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
