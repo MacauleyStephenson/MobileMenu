@@ -1,17 +1,5 @@
 "use strict";
 
-const imageSlider = (() => {
-	const images = [
-		{
-
-		},
-	];
-
-	images.forEach((image, index) => {
-
-		const dot = document.createElement("span");
-	})
-})
-
-
-export { imageSlider }
+import "./styles.css";
+import { upperNavLinks } from "./navbar";
+import { imageSlider } from "./image-slider";
