@@ -9,7 +9,7 @@ const themeOptions = (() => {
 	const githubLogo = document.querySelector(".github-logo");
 
 	const changeTheme = () => {
-		if (document.documentElement.getAttribute(".theme-toggle") === "dark") {
+		if (document.documentElement.getAttribute("theme") === "dark") {
 			document.documentElement.setAttribute("theme", "light");
 			themeToggle.setAttribute("aria-checked", "true");
 			githubLogo.setAttribute("src", "assets/images/logos/GitHub-Mark-32px.png")
@@ -22,4 +22,4 @@ const themeOptions = (() => {
 
 	changeTheme();
 	themeToggle.addEventListener("click", changeTheme);
-})
+})();
